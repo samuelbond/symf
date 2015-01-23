@@ -3,6 +3,8 @@
  * @author Samuel I Amaziro
  */
 namespace components;
+use Doctrine\ORM\EntityManager;
+
 /**
  * Class AbstractDAO
  * @package components
@@ -10,7 +12,7 @@ namespace components;
 Abstract class AbstractDAO {
     /**
      * Contains access to data store depending on type of DAO
-     * @var mixed
+     * @var mixed|EntityManager|\PDO|\Mysqli
      */
     protected static $conn;
     /**

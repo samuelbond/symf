@@ -11,5 +11,9 @@ namespace components\UserManager\versions\v1;
 
 class UserManager extends \components\UserManager\UserManager{
 
+    public function createNewUserAccount()
+    {
+
+    }
 
 } 
